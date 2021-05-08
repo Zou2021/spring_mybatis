@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--mybatis核心配置文件-->
+
+    <!--给类取别名，简化输入，方便映射配置文件中使用-->
+    <typeAliases>
+        <typeAlias type="com.zou.entity.User" alias="user"/>
+    </typeAliases>
+
+    <!--加载mapper映射配置文件-->
+    <mappers>
+        <mapper resource="User.xml"/>
+    </mappers>
+
+</configuration>
